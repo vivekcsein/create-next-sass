@@ -1,0 +1,38 @@
+@use "./variables.module" as *;
+@use "./mixins.module" as *;
+
+.flexCenter {
+  @include flex_center;
+}
+
+.flexLeft {
+  @include flex_left;
+}
+
+.toggleShow {
+  display: block;
+}
+.toggleHide {
+  display: none;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.boxShadow {
+  @include boxShadow(nth($list: $togglecp, $n: 2));
+}
+
+.toggle_phone_show {
+  @include toggle_phone_show;
+}
+
+.toggle_desktop_show {
+  @include toggle_desktop_show;
+}
+
+.fullscreen {
+  @include fullscreen;
+  width: 100%;
+}

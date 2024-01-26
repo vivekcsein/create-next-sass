@@ -1,0 +1,7 @@
+@use "../styles.scss" as *;
+
+.Header {
+  width: 100%;
+  height: $Header_height;
+  background-color: nth($list: $togglecp, $n: 1);
+}

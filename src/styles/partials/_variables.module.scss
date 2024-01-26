@@ -1,0 +1,67 @@
+/*varibales created by VivekCSE */
+
+/* backgound color: 60% */
+$bgc: var(--bgc);
+/* primary color: 30% */
+$primary: var(--primary);
+/* secondary color: 9% */
+$secondary: var(--secondary);
+/* success color: 1% */
+$success: var(--success);
+/* danger/error color: .1% */
+$danger: var(--danger);
+/* text colors  */
+$textDark: var(--textDark);
+$textLight: var(--textLight);
+$textMuted: var(--textMuted);
+/*global shadow on borders */
+$shadow: var(--shadow);
+$shadowLight: var(--shadowLight);
+/* --gradient: */
+$gradient: var(--gradient);
+
+$gradientc1: var(--gradientc1);
+$gradientc2: var(--gradientc2);
+$gradient: linear-gradient(90deg, $gradientc1 10%, $gradientc2 100%);
+
+$color_scheme: light dark;
+$dark_mode: #1a1a1a;
+$night_mode: #213547;
+$light_mode: #cccccc;
+
+$font_family: (var(--ff0), var(--ff1));
+$font_size_default: 1rem;
+$font_size_onHover: 1.25rem;
+$Header_height: 5rem;
+
+/* toggle color pallet(cp) */
+$togglecp: (
+  $bgc,
+  $primary,
+  $secondary,
+  $success,
+  $danger,
+  $textDark,
+  $textLight,
+  $textMuted,
+  $shadow,
+  $shadowLight
+);
+
+/* toggle background color pallet(bg) */
+$togglebg: ($bgc, $dark_mode, $night_mode, $light_mode);
+/* toggle favourite color pallet(tc) */
+$togglefav: (
+  var(--fav_blue),
+  var(--fav_pink),
+  var(--fav_purple),
+  var(--fav_sky),
+  var(--fav_sunrise)
+);
+$togglefavShadow: (
+  var(--fav_blue_shadow),
+  var(--fav_pink_shadow),
+  var(--fav_purple_shadow),
+  var(--fav_sky_shadow),
+  var(--fav_sunrise_shadow)
+);

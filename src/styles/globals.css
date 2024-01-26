@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* backgound color: 60% */
+      --bgc: #010000;
+      /* primary color: 30% */
+      --primary: #208df4;
+      /* secondary color: 9% */
+      --secondary: #600000;
+      /* success color: 1% */
+      --success: #a6ffbb;
+      /* --success: rgb(127, 223, 59); */
+      --danger: #ff0000;
+      /* text colors  */
+      --textDark: #d0f518;
+      --textLight: #ffffee;
+      --textMuted: #eded9b;
+    }
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --bgc: #000000;
+      /* primary color: 30% */
+      --primary: #2af6c0;
+      /* secondary color: 9% */
+      --secondary: #6200ff;
+      /* success color: 1% */
+      --success: #a6ffbb;
+      /* --success: rgb(127, 223, 59); */
+      --danger: #ff0000;
+      /* text colors  */
+      --textDark: #d0f518;
+      --textLight: #ffffee;
+      --textMuted: #eded9b;
+    }
+  }
+
+  :root {
+    --ff0: var(--font-roboto);
+    --ff1: var(--font-poppins);
+    --fav_blue: #4e4ee3;
+    --fav_pink: #ff9ff3;
+    --fav_purple: #b4238e;
+    --fav_sky: #69e9f5;
+    --fav_sunrise: #ff6700;
+
+    --fav_blue_shadow: #4e4ee3d6;
+    --fav_pink_shadow: #ff9ff3d6;
+    --fav_purple_shadow: #b4238ed6;
+    --fav_sky_shadow: #69e9f5d6;
+    --fav_sunrise_shadow: #ff6700d6;
+
+    /*global shadow on borders */
+    --shadow: #00000033;
+    --shadowLight: #fec195;
+    /* --gradient: */
+    --gradientc1: #e2b0ff;
+    --gradientc2: #9f44d3;
+    --gradient: linear-gradient(90deg, var(--gradientc1) 10%, var(--gradientc2) 100%);
+
+    --gradientp1: var(--primary);
+    --gradientp2: var(--secondary);
+    --gradientbgc: linear-gradient(90deg, var(--gradientp1) 10%, var(--gradientp2) 100%);
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--primary);
+  background: var(--bgc);
+  /* overflow-x: hidden; */
+}
+
+/* Code for Firefox */
+::-moz-selection {
+  color: var(--success);
+  background: #ff0000;
+}
+
+::selection {
+  color: var(--success);
+  background: #ff0000;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--primary);
+  font-family: var(--ff1);
+}
+
+p {
+  color: var(--primary);
+  font-size: 1rem;
+  font-family: var(--ff0);
+}
+
+.textDark {
+  color: var(--textDark);
+}
+
+.textLight {
+  color: var(--textLight);
+}

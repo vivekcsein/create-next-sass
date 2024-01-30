@@ -47,13 +47,15 @@
     --fav_pink: #ff9ff3;
     --fav_purple: #b4238e;
     --fav_sky: #69e9f5;
-    --fav_sunrise: #ff6700;
+    --fav_sun: #ff6700;
+    --fav_gray: #64748b;
 
-    --fav_blue_shadow: #4e4ee3d6;
-    --fav_pink_shadow: #ff9ff3d6;
-    --fav_purple_shadow: #b4238ed6;
-    --fav_sky_shadow: #69e9f5d6;
-    --fav_sunrise_shadow: #ff6700d6;
+    --fav_blue_shade: #4e4ee3d6;
+    --fav_pink_shade: #ff9ff3d6;
+    --fav_purple_shade: #b4238ed6;
+    --fav_sky_shade: #69e9f5d6;
+    --fav_sun_shade: #ff6700d6;
+    --fav_gray_shade: #64748bb6;
 
     /*global shadow on borders */
     --shadow: #00000033;
@@ -61,11 +63,19 @@
     /* --gradient: */
     --gradientc1: #e2b0ff;
     --gradientc2: #9f44d3;
-    --gradient: linear-gradient(90deg, var(--gradientc1) 10%, var(--gradientc2) 100%);
+    --gradient: linear-gradient(
+      90deg,
+      var(--gradientc1) 10%,
+      var(--gradientc2) 100%
+    );
 
     --gradientp1: var(--primary);
     --gradientp2: var(--secondary);
-    --gradientbgc: linear-gradient(90deg, var(--gradientp1) 10%, var(--gradientp2) 100%);
+    --gradientbgc: linear-gradient(
+      90deg,
+      var(--gradientp1) 10%,
+      var(--gradientp2) 100%
+    );
   }
 }
 

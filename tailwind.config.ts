@@ -14,14 +14,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        bgc: 'var(--bgc)',
-        primary: 'var(--primary)',
-        secondary: 'var(--secondary)',
-        success: 'var(--success)',
-        textDark: 'var(--textDark)',
-        textLight: 'var(--textLight)',
-        shadow: 'var(--shadow)',
-      }
+        bgc: "var(--bgc)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        success: "var(--success)",
+        textDark: "var(--textDark)",
+        textLight: "var(--textLight)",
+        shadow: "var(--shadow)",
+        
+      },
     },
   },
   plugins: [],

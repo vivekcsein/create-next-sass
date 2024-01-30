@@ -56,12 +56,14 @@ $togglefav: (
   var(--fav_pink),
   var(--fav_purple),
   var(--fav_sky),
-  var(--fav_sunrise)
+  var(--fav_sun),
+  var(--fav_gray)
 );
-$togglefavShadow: (
-  var(--fav_blue_shadow),
-  var(--fav_pink_shadow),
-  var(--fav_purple_shadow),
-  var(--fav_sky_shadow),
-  var(--fav_sunrise_shadow)
+$togglefavShade: (
+  var(--fav_blue_shade),
+  var(--fav_pink_shade),
+  var(--fav_purple_shade),
+  var(--fav_sky_shade),
+  var(--fav_sun_shade),
+  var(--fav_gray_shade)
 );

@@ -62,14 +62,14 @@ $breakpoints: (
   }
 }
 
-@mixin breakpoint($bp: 1920px) {
-  @media (min-width: $bp) {
+@mixin res_phone_custom($bp: 720px) {
+  @media (width<=$bp) {
     @content;
   }
 }
 
-@mixin res_phone_custom($bp: 720px) {
-  @media (width<=$bp) {
+@mixin breakpoint($bp: 1920px) {
+  @media (min-width: $bp) {
     @content;
   }
 }

@@ -84,6 +84,9 @@
 }
 
 @mixin boxShadow($color, $size: 5px) {
-  $boxShadow: 0 0 $size $color, 0 0 calc($size * 2) $color,
-    0 0 calc($size * 2) $color, 0 0 calc($size * 2) $color;
+  $boxShadow:
+    0 0 $size $color,
+    0 0 calc($size * 2) $color,
+    0 0 calc($size * 2) $color,
+    0 0 calc($size * 2) $color;
 }

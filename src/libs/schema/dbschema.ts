@@ -1,5 +1,3 @@
-
-
 // model User {
 //   userID    String @id @default (uuid())
 //   email     String @unique

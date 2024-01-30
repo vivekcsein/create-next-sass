@@ -1,11 +1,11 @@
-import { MetadataRoute } from 'next'
+import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
-    return [
-        {
-            url: 'https://website.in',
-            lastModified: new Date(),
-            changeFrequency: 'yearly',
-            priority: 1,
-        },
-    ]
+  return [
+    {
+      url: "https://website.in",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 1,
+    },
+  ];
 }

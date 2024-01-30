@@ -1,24 +1,23 @@
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from "@prisma/client";
 
 const globalForPrisma = globalThis as unknown as {
-    prisma: PrismaClient | undefined
-}
+  prisma: PrismaClient | undefined;
+};
 
-let prisma = globalForPrisma.prisma ?? new PrismaClient()
+let prisma = globalForPrisma.prisma ?? new PrismaClient();
 
-if (process.env.NODE_ENV === 'production') {
-    prisma = new PrismaClient()
-    process.on('SIGINT', () => prismaclose())
-    process.on('exit', () => prismaclose())
+if (process.env.NODE_ENV === "production") {
+  prisma = new PrismaClient();
+  process.on("SIGINT", () => prismaclose());
+  process.on("exit", () => prismaclose());
 } else {
-    globalForPrisma.prisma = prisma
+  globalForPrisma.prisma = prisma;
 }
 async function prismaclose() {
-    if (globalForPrisma.prisma) {
-        await globalForPrisma.prisma.$disconnect()
-        delete globalForPrisma.prisma
-
-    }
+  if (globalForPrisma.prisma) {
+    await globalForPrisma.prisma.$disconnect();
+    delete globalForPrisma.prisma;
+  }
 }
 // if (process.env.NODE_ENV !== 'production') globalForPrisma.prisma = prisma
 

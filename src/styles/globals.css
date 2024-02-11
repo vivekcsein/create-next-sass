@@ -6,49 +6,48 @@
   @media (prefers-color-scheme: dark) {
     :root {
       /* backgound color: 60% */
-      --bgc: #010000;
+      --bgc: #000000;
       /* primary color: 30% */
-      --primary: #208df4;
+      --primary: #dd00ff;
       /* secondary color: 9% */
-      --secondary: #600000;
+      --secondary: #6600ff;
       /* success color: 1% */
-      --success: #a6ffbb;
-      /* --success: rgb(127, 223, 59); */
+      --success: #10ff10;
+      /* danger color 0.01 */
       --danger: #ff0000;
       /* text colors  */
-      --textDark: #d0f518;
-      --textLight: #ffffee;
-      --textMuted: #eded9b;
+      --textDark: #eeaaaa;
+      --textLight: #ffddff;
+      --textMuted: #ededed;
     }
   }
 
   @media (prefers-color-scheme: light) {
     :root {
+      /* backgound color: 60% */
       --bgc: #000000;
       /* primary color: 30% */
-      --primary: #2af6c0;
+      --primary: #dd00ff;
       /* secondary color: 9% */
-      --secondary: #6200ff;
+      --secondary: #6600ff;
       /* success color: 1% */
-      --success: #a6ffbb;
-      /* --success: rgb(127, 223, 59); */
+      --success: #10ff10;
+      /* danger color 0.01 */
       --danger: #ff0000;
       /* text colors  */
-      --textDark: #d0f518;
-      --textLight: #ffffee;
-      --textMuted: #eded9b;
+      --textDark: #00eeff;
+      --textLight: #ffddff;
+      --textMuted: #ededed;
     }
   }
 
   :root {
-    --ff0: var(--font-roboto);
-    --ff1: var(--font-poppins);
+    --fav_gray: #64748b;
     --fav_blue: #4e4ee3;
     --fav_pink: #ff9ff3;
     --fav_purple: #b4238e;
     --fav_sky: #69e9f5;
     --fav_sun: #ff6700;
-    --fav_gray: #64748b;
 
     --fav_blue_shade: #4e4ee3d6;
     --fav_pink_shade: #ff9ff3d6;
@@ -59,23 +58,24 @@
 
     /*global shadow on borders */
     --shadow: #00000033;
-    --shadowLight: #fec195;
+    --shadowLight: #ffccff;
     /* --gradient: */
-    --gradientc1: #e2b0ff;
-    --gradientc2: #9f44d3;
-    --gradient: linear-gradient(
-      90deg,
-      var(--gradientc1) 10%,
-      var(--gradientc2) 100%
-    );
+    --gradientc1: #eebbff;
+    --gradientc2: #ff44dd;
+    --gradient: linear-gradient(90deg,
+        var(--gradientc1) 10%,
+        var(--gradientc2) 100%);
+
+    --color_scheme: light dark;
+    --dark_mode: #1a1a1a;
+    --night_mode: #212142;
+    --light_mode: #cccccc;
 
     --gradientp1: var(--primary);
     --gradientp2: var(--secondary);
-    --gradientbgc: linear-gradient(
-      90deg,
-      var(--gradientp1) 10%,
-      var(--gradientp2) 100%
-    );
+    --gradientbgc: linear-gradient(90deg,
+        var(--gradientp1) 10%,
+        var(--gradientp2) 100%);
   }
 }
 
@@ -86,6 +86,7 @@ body {
   box-sizing: border-box;
   color: var(--primary);
   background: var(--bgc);
+  font-size: 20px;
   /* overflow-x: hidden; */
 }
 
@@ -106,20 +107,59 @@ body {
   }
 }
 
+h1 {
+  font-size: 3.25rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.074rem;
+}
+
+h4 {
+  font-size: 1.728rem;
+}
+
+h5 {
+  font-size: 1.44rem;
+}
+
+h6 {
+  font-size: 1.2rem;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: var(--primary);
-  font-family: var(--ff1);
+  color: var(--textDark);
+  line-height: 1.25;
+  font-weight: 700;
+  text-wrap: pretty;
 }
 
-p {
-  color: var(--primary);
+p,
+div,
+span {
   font-size: 1rem;
-  font-family: var(--ff0);
+}
+
+p.small {
+  font-size: 0.833rem;
+}
+
+div,
+span,
+p {
+  color: var(--textLight);
+  line-height: 1.6;
+  font-weight: 500;
+  text-wrap: pretty;
 }
 
 .textDark {
@@ -133,13 +173,14 @@ p {
 .bg_tricolor {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(-45deg, yellow, red, green, red);
+  /* background: linear-gradient(-45deg, white, red, green, red); */
+  background: linear-gradient(-45deg, var(--primary), var(--secondary), var(--primary), var(--secondary));
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: bg__gradient 20s ease infinite;
   height: 100vh;
 }
 
-@keyframes gradient {
+@keyframes bg__gradient {
   0% {
     background-position: 0% 50%;
   }

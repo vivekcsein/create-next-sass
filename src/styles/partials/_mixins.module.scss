@@ -2,6 +2,7 @@
 @use "./breakpoint.module" as *;
 @use "./anim.module" as *;
 
+//default mixins
 @mixin toggle_hide($show) {
   display: $show;
 }
@@ -16,6 +17,11 @@
   display: flex;
   justify-content: left;
   align-items: center;
+}
+
+@mixin toggleColor {
+  color: nth($list: $togglecp, $n: 1);
+  background-color: nth($list: $togglecp, $n: 2);
 }
 
 @mixin toggle_phone_show {
@@ -41,28 +47,6 @@
   min-height: 88vh;
 }
 
-@keyframes gayab {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@mixin textInput(
-  $textcolor: nth($list: $togglecp, $n: 2),
-  $bgcolor: nth($list: $togglecp, $n: 1)
-) {
-  border: none;
-  outline: none;
-  font-size: $font_size_default;
-  box-sizing: border-box;
-  padding: 0.5rem 1rem;
-  color: $textcolor;
-  background-color: $bgcolor;
-}
-
 @mixin toggle_color(
   $textcolor: nth($list: $togglecp, $n: 2),
   $bgcolor: nth($list: $togglecp, $n: 1)
@@ -83,10 +67,25 @@
   }
 }
 
-@mixin boxShadow($color, $size: 5px) {
-  $boxShadow:
+@mixin boxShadow($color: nth($list: $togglecp, $n: 2), $size: 5px) {
+  box-shadow:
     0 0 $size $color,
     0 0 calc($size * 2) $color,
     0 0 calc($size * 2) $color,
     0 0 calc($size * 2) $color;
 }
+
+@mixin textInput(
+  $textcolor: nth($list: $togglecp, $n: 2),
+  $bgcolor: nth($list: $togglecp, $n: 1)
+) {
+  border: none;
+  outline: none;
+  font-size: $font_size_default;
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  color: $textcolor;
+  background-color: $bgcolor;
+}
+
+//project mixins

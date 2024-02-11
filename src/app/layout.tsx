@@ -1,23 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins, Roboto, Inter } from "next/font/google";
+import { roboto } from "../libs/utils/style";
 import "../styles/globals.css";
 import "../styles/styles.scss";
 
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
-
-const roboto = Roboto({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "700"],
-});
-const poppins = Poppins({
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "500", "700"],
-});
-
-const inter = Inter({ subsets: ["latin"] });
+import Font from "../components/content/Font";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://website.in"),
@@ -44,11 +32,11 @@ export default function RootLayout({
         <div id="headerLoader" className="sticky z-50">
           <Header />
         </div>
-
         {children}
         <div id="footerLoader" className="z-50">
           <Footer />
         </div>
+        <Font />
       </body>
     </html>
   );

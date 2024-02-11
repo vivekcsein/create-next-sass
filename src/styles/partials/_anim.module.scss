@@ -1,1 +1,21 @@
 @use "./variables.module" as *;
+
+//defualt animations
+//hide opacity
+@keyframes gayab {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+//360Spin
+@keyframes Anim_Spin360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+//project animations

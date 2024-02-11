@@ -1,6 +1,7 @@
 @use "./variables.module" as *;
 @use "./mixins.module" as *;
 
+//default base classes
 .flexCenter {
   @include flex_center;
 }
@@ -20,10 +21,6 @@
   cursor: pointer;
 }
 
-.boxShadow {
-  @include boxShadow(nth($list: $togglecp, $n: 2));
-}
-
 .toggle_phone_show {
   @include toggle_phone_show;
 }
@@ -35,4 +32,14 @@
 .fullscreen {
   @include fullscreen;
   width: 100%;
+}
+
+.boxShadow {
+  @include boxShadow(nth($list: $togglecp, $n: 2));
+}
+
+.activeBoxShadow {
+  &:active {
+    @include boxShadow(nth($list: $togglecp, $n: 2));
+  }
 }

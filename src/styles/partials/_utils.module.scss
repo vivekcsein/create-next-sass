@@ -3,9 +3,12 @@
 @use "./anim.module" as *;
 @use "./mixins.module" as *;
 
+//default utilities
 .sticky {
   /* Safari */
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
+
+//project utilities

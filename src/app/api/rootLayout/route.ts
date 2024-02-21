@@ -3,9 +3,9 @@
  * @returns {Promise<Object>} A promise that resolves to an object containing the characters data.
  */
 
-import layout from "../../../data/layout.json";
+import rootLayout from "../../../data/rootLayout.json";
 import { NextResponse } from "next/server";
 
 export async function GET() {
-  return NextResponse.json({ layoutdata: layout.layoutdata });
+  return NextResponse.json({ rootLayoutData: rootLayout.rootLayoutData });
 }

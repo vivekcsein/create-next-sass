@@ -1,6 +1,6 @@
 {
-  "name": "nextjs_starter",
-  "version": "v1.0.3",
+  "name": "nextjs_starter_sass",
+  "version": "v1.0.4",
   "private": true,
   "scripts": {
     "dev": "next dev",

@@ -1,4 +1,4 @@
-import { endpoint_layout } from "../utils/endpoints";
+import { endpoint_rootLayout } from "../utils/endpoints";
 
 const fetchAPI = async (endpoint: string) => {
   try {
@@ -17,7 +17,7 @@ const fetchAPI = async (endpoint: string) => {
   }
 };
 
-export const getLayoutAPI = async () => {
-  const data = await fetchAPI(endpoint_layout);
-  return data.layoutdata;
+export const getRootLayoutAPI = async () => {
+  const data = await fetchAPI(endpoint_rootLayout);
+  return data.rootLayoutData;
 };

@@ -170,10 +170,9 @@ p {
   color: var(--textLight);
 }
 
-.bg_tricolor {
+.bg_awesome {
   position: relative;
   overflow: hidden;
-  /* background: linear-gradient(-45deg, white, red, green, red); */
   background: linear-gradient(-45deg, var(--primary), var(--secondary), var(--primary), var(--secondary));
   background-size: 400% 400%;
   animation: bg__gradient 20s ease infinite;

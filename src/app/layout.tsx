@@ -2,10 +2,8 @@ import type { Metadata } from "next";
 import { roboto } from "../libs/utils/style";
 import "../styles/globals.css";
 import "../styles/styles.scss";
-
-import Header from "../components/layout/Header";
-import Footer from "../components/layout/Footer";
 import Font from "../components/content/Font";
+import Header from "@/components/layout/Header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://website.in"),
@@ -29,13 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} bg-bgc relative`}>
-        <div id="headerLoader" className="sticky z-50">
-          <Header />
-        </div>
         {children}
-        <div id="footerLoader" className="z-50">
-          <Footer />
-        </div>
         <Font />
       </body>
     </html>

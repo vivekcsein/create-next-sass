@@ -42,19 +42,23 @@
   }
 
   :root {
-    --fav_gray: #64748b;
+    --fav_gray: #0f1122;
     --fav_blue: #4e4ee3;
     --fav_pink: #ff9ff3;
     --fav_purple: #b4238e;
     --fav_sky: #69e9f5;
     --fav_sun: #ff6700;
+    --fav_gold: #ffdd00;
+    --fav_green: #39aa69;
 
+    --fav_gray_shade: #0f1122d6;
     --fav_blue_shade: #4e4ee3d6;
     --fav_pink_shade: #ff9ff3d6;
     --fav_purple_shade: #b4238ed6;
     --fav_sky_shade: #69e9f5d6;
     --fav_sun_shade: #ff6700d6;
-    --fav_gray_shade: #64748bb6;
+    --fav_gold_shade: #ffdd00b6;
+    --fav_green_shade: #38aa69;
 
     /*global shadow on borders */
     --shadow: #00000033;
@@ -191,4 +195,27 @@ p {
   100% {
     background-position: 0% 50%;
   }
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem 3rem;
+  background-color: var(--fav_gray);
+  color: var(--textDark);
+}
+
+input::placeholder {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  box-sizing: border-box;
+  padding: 0.5rem 3rem;
+  background-color: var(--fav_gray);
+  color: var(--textDark)
 }

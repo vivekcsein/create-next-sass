@@ -74,6 +74,16 @@ export const fav_colors = [
     name: "sun",
     code: "#ff6700",
   },
+  {
+    id: "fav_color07",
+    name: "gold",
+    code: "#ffdd00",
+  },
+  {
+    id: "fav_color08",
+    name: "green",
+    code: "#39aa69",
+  },
 ];
 
 export const colors = [

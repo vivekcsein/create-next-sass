@@ -135,6 +135,33 @@ h6 {
   font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 720px) {
+  h1 {
+    font-size: calc(3.25rem * .75);
+  }
+
+  h2 {
+    font-size: calc(2.5rem * .75);
+  }
+
+  h3 {
+    font-size: calc(2.074rem * .75);
+  }
+
+  h4 {
+    font-size: calc(1.728rem * .75);
+  }
+
+  h5 {
+    font-size: calc(1.44rem * .75);
+  }
+
+  h6 {
+    font-size: calc(1.2rem * .75);
+  }
+}
+
+
 h1,
 h2,
 h3,

@@ -16,6 +16,15 @@ const nextConfig = {
       },
     ],
   },
+  //rewrite only works on client components
+  async rewrites() {
+    return [
+      {
+        source: '/api/:path*',
+        destination: 'https://www.vivekcse.in/api/:path*',
+      },
+    ]
+  },
   // output: "export"
 };
 

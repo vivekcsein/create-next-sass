@@ -1,1 +1,1 @@
-export const endpoint_rootLayout = 'http://127.0.0.1:3000/api/rootLayout';
+export const endpoint_rootLayout = "http://127.0.0.1:3000/api/rootLayout";

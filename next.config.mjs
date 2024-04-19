@@ -21,7 +21,7 @@ const nextConfig = {
     return [
       {
         source: '/api/:path*',
-        destination: 'https://www.vivekcse.in/api/:path*',
+        destination: 'https://www.github.com/api/:path*',
       },
     ]
   },

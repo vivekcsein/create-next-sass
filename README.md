@@ -2,7 +2,7 @@
         web-applications.
 </h1>
 
-<p> Requirement:- NextJS v14, react v18, GSAP v3, Prisma Client for databse connection
+<p> Requirement:- NextJS v14, react v18, GSAP v3
     </p>
 
 <p>You can create nextjs from scratch using create next-app@latest
@@ -13,7 +13,7 @@
 
 </p>
 
-<p>copy paste it in next.config.js
+<p>copy paste it in next.config.js for sass configurations
 
         const __filename = fileURLToPath(import.meta.url);
         const __dirname = path.dirname(__filename);

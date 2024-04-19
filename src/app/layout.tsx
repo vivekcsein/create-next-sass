@@ -3,6 +3,7 @@ import { roboto } from "../libs/utils/style";
 import "../styles/globals.css";
 import "../styles/styles.scss";
 import Font from "../components/content/Font";
+// import "frnz-ui/dist/styles/styles_ui.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://website.in"),

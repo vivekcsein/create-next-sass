@@ -20,6 +20,7 @@ export const postImageAPI = async (endpoint: string, imgdata: string) => {
     }
 
     const data = await response.json();
+    return data;
   } catch (error) {
     throw error;
   }
